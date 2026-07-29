@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dealership System</title>
+    <!-- Bootstrap 5 CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .banner-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navigation Bar (Active on Contact Us) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Dealership Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/static/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/static/About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Active Class Added Here -->
+                        <a class="nav-link active fw-bold" aria-current="page" href="/static/Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Banner Image Section -->
+    <div class="position-relative mb-5">
+        <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200&auto=format&fit=crop&q=80" 
+             alt="Contact Banner" class="banner-img">
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white p-3 rounded" style="background: rgba(0, 0, 0, 0.6); width: 80%;">
+            <h1 class="fw-bold">Contact Our Support Team</h1>
+            <p class="lead mb-0">We are here to assist you with any inquiries regarding our vehicles and services.</p>
+        </div>
+    </div>
+
+    <!-- Main Contact Content Section -->
+    <div class="container mb-5">
+        <div class="row g-4">
+            
+            <!-- Contact Details Card -->
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                    <h3 class="fw-bold mb-4 text-dark">Get in Touch</h3>
+                    
+                    <!-- Address -->
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon bg-primary text-white me-3 fs-5">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Our Location</h6>
+                            <p class="text-muted mb-0">123 Auto Avenue, Dealership District, NY 10001</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon bg-primary text-white me-3 fs-5">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Call Us</h6>
+                            <p class="text-muted mb-0">+1 (800) 555-AUTO / +1 (800) 555-2886</p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon bg-primary text-white me-3 fs-5">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Email Support</h6>
+                            <p class="text-muted mb-0">contact@dealership.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours -->
+                    <div class="d-flex align-items-center">
+                        <div class="contact-icon bg-primary text-white me-3 fs-5">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Business Hours</h6>
+                            <p class="text-muted mb-0">Mon - Sat: 9:00 AM - 6:00 PM (Sun: Closed)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                    <h3 class="fw-bold mb-4 text-dark">Send Us a Message</h3>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label fw-medium">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="emailInput" class="form-label fw-medium">Email Address</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="subjectInput" class="form-label fw-medium">Subject</label>
+                                <input type="text" class="form-control" id="subjectInput" placeholder="Inquiry about car availability" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="messageInput" class="form-label fw-medium">Message</label>
+                                <textarea class="form-control" id="messageInput" rows="4" placeholder="Type your message here..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill fw-bold">Submit Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
