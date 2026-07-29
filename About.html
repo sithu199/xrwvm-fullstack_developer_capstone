@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap 5 CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .profile-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Header / Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Dealership Portal</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- About Section Header -->
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-dark">About Our Team</h1>
+            <p class="lead text-muted">We are dedicated to delivering the best service and experience for our dealership system.</p>
+        </div>
+
+        <!-- Team Members Grid -->
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Person 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card profile-card h-100 border-0 text-center p-4 rounded-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80" 
+                         alt="Sarah Jenkins" class="rounded-circle profile-img mx-auto mb-3 border border-3 border-primary">
+                    <div class="card-body p-0">
+                        <h4 class="card-title fw-bold text-dark mb-1">Sarah Jenkins</h4>
+                        <p class="text-primary fw-medium mb-3">Chief Executive Officer</p>
+                        <p class="card-text text-secondary mb-3">
+                            Sarah has over 12 years of automotive industry experience, leading software innovations and business strategy.
+                        </p>
+                        <a href="mailto:sarah.j@example.com" class="btn btn-outline-primary btn-sm rounded-pill">
+                            <i class="fa-solid fa-envelope me-1"></i> sarah.j@example.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Person 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card profile-card h-100 border-0 text-center p-4 rounded-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80" 
+                         alt="Michael Chen" class="rounded-circle profile-img mx-auto mb-3 border border-3 border-primary">
+                    <div class="card-body p-0">
+                        <h4 class="card-title fw-bold text-dark mb-1">Michael Chen</h4>
+                        <p class="text-primary fw-medium mb-3">Lead Software Engineer</p>
+                        <p class="card-text text-secondary mb-3">
+                            Michael specializes in full-stack web development and scalable backend microservices architecture.
+                        </p>
+                        <a href="mailto:m.chen@example.com" class="btn btn-outline-primary btn-sm rounded-pill">
+                            <i class="fa-solid fa-envelope me-1"></i> m.chen@example.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Person 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card profile-card h-100 border-0 text-center p-4 rounded-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&auto=format&fit=crop&q=80" 
+                         alt="Emily Davis" class="rounded-circle profile-img mx-auto mb-3 border border-3 border-primary">
+                    <div class="card-body p-0">
+                        <h4 class="card-title fw-bold text-dark mb-1">Emily Davis</h4>
+                        <p class="text-primary fw-medium mb-3">Product Operations Manager</p>
+                        <p class="card-text text-secondary mb-3">
+                            Emily oversees product management, customer relations, and dealership operations integration.
+                        </p>
+                        <a href="mailto:emily.davis@example.com" class="btn btn-outline-primary btn-sm rounded-pill">
+                            <i class="fa-solid fa-envelope me-1"></i> emily.davis@example.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
