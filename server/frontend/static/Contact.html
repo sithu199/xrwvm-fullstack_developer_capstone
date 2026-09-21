@@ -3,87 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Cars Deal</title>
-    <!-- Correct CSS Link -->
-    <link rel="stylesheet" href="../static/style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        /* Navigation Bar */
-        nav {
-            background-color: #1a1a1a;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 16px;
-        }
-        /* Active state for Contact Us */
-        nav a.active {
-            color: #e67e22;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 30px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        .contact-info {
-            margin-top: 20px;
-            line-height: 1.8;
-        }
-        .contact-info p {
-            font-size: 16px;
-        }
-        .contact-img {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact-img img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-    </style>
+    <title>Contact Us</title>
+    <!-- 1. Required Stylesheets -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar with 'active' on Contact Us -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="About.html">About Us</a>
-        <a href="Contact.html" class="active">Contact Us</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dealerships</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
+    <!-- Contact Content -->
+    <div class="container mt-5">
         <h2>Contact Us</h2>
-        
-        <div class="contact-img">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Office Building">
-        </div>
-
-        <div class="contact-info">
-            <p><strong>Address:</strong> 123 Car Dealership Avenue, Auto City, Myanmar</p>
-            <p><strong>Phone:</strong> +95 9 123 456 789</p>
-            <p><strong>Email:</strong> support@carsdeal.com</p>
-            <p><strong>Working Hours:</strong> Monday - Saturday (9:00 AM - 6:00 PM)</p>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <!-- 2. Required Image (cars.jpeg or contactus.png) -->
+                <img src="/static/contactus.png" class="img-fluid" alt="Contact Us">
+            </div>
+            <div class="col-md-6">
+                <h4>Our Details</h4>
+                <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+                <p><strong>Phone:</strong> +1 234 567 8900</p>
+                <p><strong>Email:</strong> contact@dealership.com</p>
+                <p><strong>Working Hours:</strong> Mon - Fri: 9:00 AM - 6:00 PM</p>
+            </div>
         </div>
     </div>
 
 </body>
 </html>
+
